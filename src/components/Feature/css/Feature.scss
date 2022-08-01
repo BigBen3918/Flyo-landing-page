@@ -1,0 +1,43 @@
+.feature-wrapper {
+  width: 100%;
+  height: 100%;
+  background-image: url("../image/curve-bg-illustration.svg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: 300ms ease-out;
+
+  &-dark {
+    background-image: url("../image/curve-bg-illustration-dark.svg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
+
+.feature {
+  width: 80%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-row-gap: 3rem;
+  padding: 6rem 0 3rem;
+  max-width: 1366px;
+
+  @media (max-width: 768px) {
+    max-width: 500px;
+  }
+
+  @media (min-width: 768px) {
+    grid-gap: 4rem 2rem;
+  }
+
+  &-item {
+    grid-column: 12 span;
+
+    @media (min-width: 768px) {
+      grid-column: 6 span;
+      padding: 0 1rem;
+    }
+  }
+}

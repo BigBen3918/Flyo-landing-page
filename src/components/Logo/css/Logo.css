@@ -1,0 +1,16 @@
+.logo {
+  width: 80px;
+  display: block;
+}
+
+@media (min-width: 786px) {
+  .logo {
+    width: 120px;
+  }
+}
+
+.logo img {
+  width: 100%;
+  height: auto;
+}
+/*# sourceMappingURL=Logo.css.map */

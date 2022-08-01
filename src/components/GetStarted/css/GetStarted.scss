@@ -1,0 +1,67 @@
+.GetStarted-wrapper {
+  background-color: white;
+  transition: 300ms ease-out;
+
+  &-dark {
+    background-color: #0b1523;
+  }
+}
+
+.GetStarted {
+  padding: 2rem 0.5rem;
+  max-width: 800px;
+  margin: 0 auto;
+  border-radius: 1rem;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  background-color: white;
+  width: 80%;
+  position: relative;
+  top: -200px;
+  z-index: 90;
+  transition: 300ms ease-out;
+
+  &-dark {
+    background-color: #1c2431;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 7px 29px 0px;
+  }
+
+  @media (min-width: 576px) {
+    padding: 3rem;
+  }
+
+  @media (min-width: 992px) {
+    top: -130px;
+  }
+
+  &-heading {
+    font-size: 1.3rem;
+    font-family: "Raleway", sans-serif;
+    text-align: center;
+    width: 80%;
+    margin: 0 auto;
+    transition: 300ms ease-out;
+    color: #000217;
+
+    &-dark {
+      color: rgb(212, 212, 212);
+    }
+
+    @media (min-width: 576px) {
+      font-size: 1.7rem;
+    }
+  }
+
+  &-text {
+    margin: auto;
+    width: 80%;
+    font-size: 0.9rem;
+    line-height: 1.8rem;
+    margin-top: 1rem;
+    text-align: center;
+    color: #8b8b8b;
+
+    @media (min-width: 576px) {
+      width: 80%;
+    }
+  }
+}

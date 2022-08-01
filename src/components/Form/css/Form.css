@@ -1,0 +1,115 @@
+.form {
+  margin-top: 2rem;
+  font-family: "Open sans", sans-serif;
+}
+
+@media (max-width: 992px) {
+  .form {
+    max-width: 540px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (min-width: 768px) {
+  .form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+@media (min-width: 992px) {
+  .form-margin-left {
+    margin-left: 4rem;
+  }
+}
+
+.email {
+  font-size: 1rem;
+  padding: 1rem 1.5rem;
+  border-radius: 100rem;
+  border: 1px solid #9e9e9e;
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+  font-family: "Open sans", sans-serif;
+  -webkit-transition: 300ms ease-out;
+  transition: 300ms ease-out;
+}
+
+.email-dark {
+  background-color: inherit;
+  color: #9e9e9e;
+}
+
+@media (max-width: 768px) {
+  .email {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+}
+
+.email:focus {
+  border: 1px solid #3065f8;
+}
+
+.email::-webkit-input-placeholder {
+  color: #9e9e9e;
+}
+
+.email:-ms-input-placeholder {
+  color: #9e9e9e;
+}
+
+.email::-ms-input-placeholder {
+  color: #9e9e9e;
+}
+
+.email::placeholder {
+  color: #9e9e9e;
+}
+
+.button {
+  padding: 1rem 1.5rem;
+  font-size: 1rem;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  margin-left: 2rem;
+  background-color: #3065f8;
+  border: 1px solid #3065f8;
+  border-radius: 100rem;
+  color: white;
+  -webkit-transition: 300ms ease-out;
+  transition: 300ms ease-out;
+}
+
+@media (max-width: 767px) {
+  .button {
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    margin-top: 1rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .button:hover {
+    border: 1px solid #2747a1;
+    background-color: #2747a1;
+  }
+  .button:active {
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+  }
+}
+/*# sourceMappingURL=Form.css.map */

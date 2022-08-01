@@ -1,0 +1,135 @@
+.nav {
+  font-family: "Raleway", sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: inherit;
+}
+
+@media (max-width: 786px) {
+  .nav-items {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 0%;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    z-index: 98;
+    -webkit-transition: 300ms ease-out;
+    transition: 300ms ease-out;
+    overflow: hidden;
+    background-color: inherit;
+  }
+}
+
+.nav-items-active {
+  width: 100%;
+}
+
+@media (min-width: 786px) {
+  .nav-items {
+    display: block;
+  }
+}
+
+.nav-item {
+  color: #8f8f8f;
+  font-size: 0.85rem;
+  text-decoration: none;
+  margin: 0 0.7rem;
+  padding: 0.7rem;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  position: relative;
+}
+
+.nav-item::after {
+  content: "";
+  width: 0%;
+  left: 0;
+  height: 2px;
+  display: block;
+  position: absolute;
+  margin-top: 0.3rem;
+  background-color: #8f8f8f;
+  -webkit-transition: 200ms ease-out;
+  transition: 200ms ease-out;
+}
+
+.nav-item:hover::after {
+  width: 100%;
+}
+
+.nav-item-active {
+  font-weight: 700;
+  color: #3065f8;
+}
+
+.nav-item-active-dark {
+  color: #65e2d9;
+}
+
+.AnimatedBtn {
+  position: relative;
+  width: 2rem;
+  z-index: 99;
+}
+
+@media (min-width: 786px) {
+  .AnimatedBtn {
+    display: none;
+  }
+}
+
+.AnimatedBtn-Top, .AnimatedBtn-Middle, .AnimatedBtn-Bottom {
+  width: 100%;
+  display: block;
+  height: 0.25rem;
+  background-color: #8b8b8b;
+  border-radius: 100rem;
+  -webkit-transition: 300ms ease-out;
+  transition: 300ms ease-out;
+}
+
+.AnimatedBtn-Top-active, .AnimatedBtn-Middle-active, .AnimatedBtn-Bottom-active {
+  background-color: #65e2d9;
+}
+
+.AnimatedBtn-Middle {
+  margin: 0.3rem 0;
+}
+
+.AnimatedBtn-MiddleClick {
+  opacity: 0;
+}
+
+.AnimatedBtn-TopClick {
+  -webkit-transform: translateY(0.55rem) rotate(-45deg);
+          transform: translateY(0.55rem) rotate(-45deg);
+}
+
+.AnimatedBtn-BottomClick {
+  -webkit-transform: translateY(-0.55rem) rotate(45deg);
+          transform: translateY(-0.55rem) rotate(45deg);
+}
+
+.AnimatedBtn-Cover {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+/*# sourceMappingURL=Nav.css.map */

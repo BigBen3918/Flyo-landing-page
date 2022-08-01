@@ -1,0 +1,29 @@
+.Hero-wrapper {
+  padding: 0 0 4rem;
+  transition: 300ms ease-out;
+
+  @media (min-width: 992px) {
+    padding: 4rem 0;
+  }
+
+  &-dark {
+    background-color: #1c2431;
+  }
+}
+
+.Hero {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1366px;
+
+  @media (min-width: 992px) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    & > * {
+      flex: 1;
+    }
+  }
+}

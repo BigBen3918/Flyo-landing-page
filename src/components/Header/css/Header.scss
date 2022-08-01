@@ -1,0 +1,31 @@
+.header-fixed {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  transition: 300ms ease-out;
+  z-index: 99;
+}
+
+.header-wrapper {
+  background-color: white;
+  position: relative;
+  z-index: 97;
+  transition: 300ms ease-out;
+
+  &-active {
+    background-color: #1c2431;
+  }
+}
+
+.header {
+  width: 90%;
+  max-width: 1366px;
+  margin: 0 auto;
+  padding: 1.5rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: inherit;
+}

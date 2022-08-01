@@ -1,0 +1,161 @@
+.Footer-wrapper {
+  background-color: white;
+  transition: 300ms ease-out;
+
+  &-dark {
+    background-color: #0b1523;
+  }
+
+  @media (max-width: 991px) {
+    margin-top: -5rem;
+  }
+}
+
+.Footer {
+  width: 90%;
+  max-width: 1366px;
+  margin: 0 auto;
+  padding-bottom: 4rem;
+  color: #8b8b8b;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-row-gap: 1rem;
+
+  & > * {
+    grid-column: 12 span;
+  }
+
+  @media (min-width: 576px) {
+    grid-gap: 3rem;
+  }
+}
+
+.Footer-aboutText {
+  line-height: 1.8rem;
+  text-align: center;
+
+  @media (min-width: 576px) {
+    grid-column: 6 span;
+  }
+
+  @media (min-width: 992px) {
+    grid-column: 2 / span 3;
+    text-align: left;
+  }
+}
+
+.Footer-details {
+  @media (min-width: 576px) {
+    grid-column: 6 span;
+  }
+
+  @media (min-width: 992px) {
+    grid-column: 3 span;
+  }
+}
+
+.details {
+  &-phone,
+  &-email,
+  &-location {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.9rem;
+    text-align: left;
+    line-height: 1.8rem;
+
+    @media (min-width: 992px) {
+      justify-content: flex-start;
+    }
+
+    img {
+      width: 15px;
+      height: 15px;
+      display: block;
+      margin-right: 1rem;
+    }
+  }
+}
+
+.Footer-links {
+  grid-column: 12 span;
+  @media (min-width: 576px) {
+    grid-column: 6 span;
+  }
+
+  @media (min-width: 992px) {
+    grid-column: 2 span;
+  }
+}
+
+.Footer-link-item {
+  display: block;
+  font-size: 0.9rem;
+  line-height: 1.8rem;
+  color: #8b8b8b;
+  width: max-content;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media (min-width: 992px) {
+    text-decoration: none;
+    margin: 0;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.Footer-socialLinks {
+  margin: auto;
+  max-width: 350px;
+  width: 80%;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 1rem;
+}
+
+.Footer-socialLink {
+  border: 2px solid #000217;
+  border-radius: 100rem;
+  width: 45px;
+  height: 45px;
+  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  background-color: inherit;
+  transition: 300ms ease-out;
+
+  .fab {
+    color: #000217;
+    font-size: 1.5rem;
+    transition: 300ms ease-out;
+  }
+
+  &:hover {
+    background-color: #000217;
+
+    .fab {
+      color: white;
+    }
+  }
+
+  &-dark {
+    border: 2px solid white;
+
+    .fab {
+      color: white;
+    }
+
+    &:hover {
+      background-color: white;
+      .fab {
+        color: #000217;
+      }
+    }
+  }
+}

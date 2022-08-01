@@ -1,0 +1,40 @@
+.header-fixed {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  -webkit-transition: 300ms ease-out;
+  transition: 300ms ease-out;
+  z-index: 99;
+}
+
+.header-wrapper {
+  background-color: white;
+  position: relative;
+  z-index: 97;
+  -webkit-transition: 300ms ease-out;
+  transition: 300ms ease-out;
+}
+
+.header-wrapper-active {
+  background-color: #1c2431;
+}
+
+.header {
+  width: 90%;
+  max-width: 1366px;
+  margin: 0 auto;
+  padding: 1.5rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: inherit;
+}
+/*# sourceMappingURL=Header.css.map */

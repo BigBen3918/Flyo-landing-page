@@ -1,0 +1,114 @@
+.nav {
+  font-family: "Raleway", sans-serif;
+  display: flex;
+  align-items: center;
+  background-color: inherit;
+
+  &-items {
+    @media (max-width: 786px) {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 0%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 98;
+      transition: 300ms ease-out;
+      overflow: hidden;
+      background-color: inherit;
+    }
+
+    &-active {
+      width: 100%;
+    }
+
+    @media (min-width: 786px) {
+      display: block;
+    }
+  }
+
+  &-item {
+    color: #8f8f8f;
+    font-size: 0.85rem;
+    text-decoration: none;
+    margin: 0 0.7rem;
+    padding: 0.7rem;
+    width: max-content;
+    position: relative;
+
+    &::after {
+      content: "";
+      width: 0%;
+      left: 0;
+      height: 2px;
+      display: block;
+      position: absolute;
+      margin-top: 0.3rem;
+      background-color: #8f8f8f;
+      transition: 200ms ease-out;
+    }
+
+    &:hover::after {
+      width: 100%;
+    }
+
+    &-active {
+      font-weight: 700;
+      color: #3065f8;
+      &-dark {
+        color: #65e2d9;
+      }
+    }
+  }
+}
+
+.AnimatedBtn {
+  position: relative;
+  width: 2rem;
+  z-index: 99;
+
+  @media (min-width: 786px) {
+    display: none;
+  }
+
+  &-Top,
+  &-Middle,
+  &-Bottom {
+    width: 100%;
+    display: block;
+    height: 0.25rem;
+    background-color: #8b8b8b;
+    border-radius: 100rem;
+    transition: 300ms ease-out;
+
+    &-active {
+      background-color: #65e2d9;
+    }
+  }
+
+  &-Middle {
+    margin: 0.3rem 0;
+  }
+
+  &-MiddleClick {
+    opacity: 0;
+  }
+
+  &-TopClick {
+    transform: translateY(0.3rem + 0.25rem) rotate(-45deg);
+  }
+
+  &-BottomClick {
+    transform: translateY(-(0.3rem + 0.25rem)) rotate(45deg);
+  }
+
+  &-Cover {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+  }
+}

@@ -1,0 +1,203 @@
+.Footer-wrapper {
+  background-color: white;
+  -webkit-transition: 300ms ease-out;
+  transition: 300ms ease-out;
+}
+
+.Footer-wrapper-dark {
+  background-color: #0b1523;
+}
+
+@media (max-width: 991px) {
+  .Footer-wrapper {
+    margin-top: -5rem;
+  }
+}
+
+.Footer {
+  width: 90%;
+  max-width: 1366px;
+  margin: 0 auto;
+  padding-bottom: 4rem;
+  color: #8b8b8b;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[12];
+      grid-template-columns: repeat(12, 1fr);
+  grid-row-gap: 1rem;
+}
+
+.Footer > * {
+  grid-column: 12 span;
+}
+
+@media (min-width: 576px) {
+  .Footer {
+    grid-gap: 3rem;
+  }
+}
+
+.Footer-aboutText {
+  line-height: 1.8rem;
+  text-align: center;
+}
+
+@media (min-width: 576px) {
+  .Footer-aboutText {
+    grid-column: 6 span;
+  }
+}
+
+@media (min-width: 992px) {
+  .Footer-aboutText {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 3;
+    grid-column: 2 / span 3;
+    text-align: left;
+  }
+}
+
+@media (min-width: 576px) {
+  .Footer-details {
+    grid-column: 6 span;
+  }
+}
+
+@media (min-width: 992px) {
+  .Footer-details {
+    grid-column: 3 span;
+  }
+}
+
+.details-phone, .details-email, .details-location {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 0.9rem;
+  text-align: left;
+  line-height: 1.8rem;
+}
+
+@media (min-width: 992px) {
+  .details-phone, .details-email, .details-location {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+}
+
+.details-phone img, .details-email img, .details-location img {
+  width: 15px;
+  height: 15px;
+  display: block;
+  margin-right: 1rem;
+}
+
+.Footer-links {
+  grid-column: 12 span;
+}
+
+@media (min-width: 576px) {
+  .Footer-links {
+    grid-column: 6 span;
+  }
+}
+
+@media (min-width: 992px) {
+  .Footer-links {
+    grid-column: 2 span;
+  }
+}
+
+.Footer-link-item {
+  display: block;
+  font-size: 0.9rem;
+  line-height: 1.8rem;
+  color: #8b8b8b;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (min-width: 992px) {
+  .Footer-link-item {
+    text-decoration: none;
+    margin: 0;
+  }
+  .Footer-link-item:hover {
+    text-decoration: underline;
+  }
+}
+
+.Footer-socialLinks {
+  margin: auto;
+  max-width: 350px;
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-top: 1rem;
+}
+
+.Footer-socialLink {
+  border: 2px solid #000217;
+  border-radius: 100rem;
+  width: 45px;
+  height: 45px;
+  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  cursor: pointer;
+  background-color: inherit;
+  -webkit-transition: 300ms ease-out;
+  transition: 300ms ease-out;
+}
+
+.Footer-socialLink .fab {
+  color: #000217;
+  font-size: 1.5rem;
+  -webkit-transition: 300ms ease-out;
+  transition: 300ms ease-out;
+}
+
+.Footer-socialLink:hover {
+  background-color: #000217;
+}
+
+.Footer-socialLink:hover .fab {
+  color: white;
+}
+
+.Footer-socialLink-dark {
+  border: 2px solid white;
+}
+
+.Footer-socialLink-dark .fab {
+  color: white;
+}
+
+.Footer-socialLink-dark:hover {
+  background-color: white;
+}
+
+.Footer-socialLink-dark:hover .fab {
+  color: #000217;
+}
+/*# sourceMappingURL=Footer.css.map */

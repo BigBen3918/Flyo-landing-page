@@ -1,0 +1,52 @@
+.TestimonialCard {
+  background-color: white;
+  color: #8b8b8b;
+  max-width: 340px;
+  border-radius: 2rem;
+  padding: 1.5rem;
+  position: relative;
+  font-size: 0.9rem;
+  line-height: 1.6rem;
+  -webkit-box-shadow: 1rem 1rem 0 0 #e3e5e8;
+          box-shadow: 1rem 1rem 0 0 #e3e5e8;
+  -webkit-transition: 300ms ease-out;
+  transition: 300ms ease-out;
+}
+
+@media (max-width: 991px) {
+  .TestimonialCard {
+    margin: auto;
+    margin-bottom: 3rem;
+    width: 90%;
+  }
+}
+
+.TestimonialCard-dark {
+  background-color: #202a3c;
+  -webkit-box-shadow: 1rem 1rem 0 #0f1724;
+          box-shadow: 1rem 1rem 0 #0f1724;
+}
+
+.Testimonial-profile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 1.5rem;
+}
+
+.profile-img {
+  display: block;
+  width: 55px;
+  height: 55px;
+  border-radius: 100rem;
+  margin-right: 1rem;
+}
+
+.profile-name {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+}
+/*# sourceMappingURL=TestimonialCard.css.map */
